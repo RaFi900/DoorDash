@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="401.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.doordash.controller.DashboardController">
+   <children>
+      <Label layoutX="268.0" layoutY="21.0" text="DoorDash">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#e4084e" glyphName="HOME" layoutX="76.0" layoutY="368.0" size="35" wrappingWidth="33.5999755859375" />
+      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="287.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="76.0" layoutY="74.0" text="Services:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="143.0" text="Food Vendor:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="214.0" text="Restaurant:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="100.0" text="Cloud Kitchen:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="188.0" text="Menu Item:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="servicesField" layoutX="76.0" layoutY="100.0" prefWidth="150.0" />
+      <ComboBox fx:id="vendorField" layoutX="76.0" layoutY="169.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="restaurantField" layoutX="76.0" layoutY="240.0" prefWidth="150.0" />
+      <Separator layoutX="321.0" layoutY="82.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Button layoutX="178.0" layoutY="291.0" mnemonicParsing="false" onAction="#order" text="Place Order" textFill="#0654c9">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="360.0" layoutY="291.0" mnemonicParsing="false" onAction="#reserve" text="PreBook" textFill="#c70617">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="menuItemField" layoutX="398.0" layoutY="214.0" prefWidth="150.0" />
+      <FontAwesomeIconView fill="#e4084e" glyphName="LIST" layoutX="226.0" layoutY="367.0" onMouseClicked="#changeToOrderScene" size="30" wrappingWidth="33.5999755859375" />
+      <FontAwesomeIconView fill="#e4084e" glyphName="USER" layoutX="523.0" layoutY="366.0" onMouseClicked="#goToProfile" size="30" wrappingWidth="33.5999755859375" />
+      <ChoiceBox fx:id="cloudField" layoutX="400.0" layoutY="126.0" prefWidth="150.0" />
+      <Label layoutX="493.0" layoutY="13.0" text="Hello">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="540.0" layoutY="13.0" prefHeight="26.0" prefWidth="96.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#a40439" glyphName="LIST" layoutX="381.0" layoutY="368.0" onMouseClicked="#changeToPreorderScene" size="30" wrappingWidth="33.5999755859375" />
+   </children>
+</AnchorPane>

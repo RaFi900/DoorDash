@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.doordash.controller.PreBookController">
+   <children>
+      <Label layoutX="237.0" layoutY="26.0" text="DoorDash">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="233.0" text="Table Book:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="256.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="148.0" text="Restaurant &amp; Ratings:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="50.0" layoutY="174.0" prefHeight="26.0" prefWidth="188.0" />
+      <Label layoutX="50.0" layoutY="233.0" text="Menu Item:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="50.0" layoutY="259.0" prefHeight="26.0" prefWidth="188.0" />
+      <Separator layoutX="297.0" layoutY="122.0" orientation="VERTICAL" prefHeight="200.0" />
+      <ChoiceBox layoutX="325.0" layoutY="174.0" prefHeight="26.0" prefWidth="188.0" />
+      <Label layoutX="325.0" layoutY="148.0" text="Quantity:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="325.0" layoutY="259.0" prefHeight="26.0" prefWidth="188.0" />
+      <Button layoutX="273.0" layoutY="322.0" mnemonicParsing="false" onAction="#goToPreorder" text="Book" textFill="#0654c9">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <FontAwesomeIconView fill="#e4084e" glyphName="HOME" layoutX="198.0" layoutY="382.0" onMouseClicked="#goToDashBoard" size="35" text="" wrappingWidth="33.5999755859375" />
+      <FontAwesomeIconView fill="#e4084e" glyphName="LIST" layoutX="369.0" layoutY="380.0" onMouseClicked="#preOrder" size="30" wrappingWidth="33.5999755859375" />
+      <Label layoutX="112.0" layoutY="80.0" prefHeight="35.0" prefWidth="459.0" text="Introducing new feature Grab, Eat, Pay and Go. Pre-Book dine-in." />
+   </children>
+</AnchorPane>

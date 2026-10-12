@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.doordash.controller.OrderController">
+   <children>
+      <Label layoutX="265.0" layoutY="21.0" prefHeight="36.0" prefWidth="119.0" text="DoorDash">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="285.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="userTableView" layoutX="11.0" layoutY="275.0" prefHeight="110.0" prefWidth="628.0">
+        <columns>
+          <TableColumn fx:id="serviceColumn" prefWidth="107.2000150680542" text="Service" />
+          <TableColumn fx:id="vendorTypeColumn" prefWidth="84.79998779296875" text="Vendor Type" />
+            <TableColumn fx:id="restaurantcloudColumn" prefWidth="106.40000915527344" text="Restaurant/Cloud" />
+            <TableColumn fx:id="itemColumn" prefWidth="107.20001220703125" text="Item" />
+            <TableColumn fx:id="billColumn" minWidth="7.20001220703125" prefWidth="56.79998779296875" text="Bill" />
+            <TableColumn fx:id="codColumn" prefWidth="89.5999755859375" text="COD Charge" />
+            <TableColumn fx:id="totalBillColumn" prefWidth="73.60003662109375" text="Total Bill" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fill="#e4084e" glyphName="HOME" layoutX="546.0" layoutY="51.0" onMouseClicked="#goToDashBoard" size="35" wrappingWidth="33.5999755859375" />
+      <ImageView fitHeight="36.0" fitWidth="119.0" layoutX="257.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@time.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="167.0" layoutX="250.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cooking-8x6.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
